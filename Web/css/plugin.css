@@ -1,0 +1,77 @@
+/*paticles.js*/
+canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+/*scrollin-animation*/
+.scrollin{
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+.leftAnime{
+    opacity: 0;
+}
+.slideAnimeLeftRight {
+	animation-name:slideTextX100;
+	animation-duration:3.0s;
+	animation-fill-mode:forwards;
+    opacity: 0;
+}
+/*loading-animation*/
+#splash{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: rgb(40, 100, 100);
+    text-align:center;
+    color:#fff;
+}
+#splash_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.splashbg{
+    display: none;
+}
+@keyframes fadeUpAnime{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fadeUp{
+    color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
+    border-right: 0.08em solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 1.3s steps(19, end) forwards, cursol 1s step-end infinite;
+} 
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 11.5em;
+    }
+}
+@keyframes cursol{
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: black;
+    }
+    100%{
+        border-color: transparent;
+    }
+}

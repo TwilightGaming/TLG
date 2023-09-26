@@ -1,0 +1,81 @@
+/*header*/
+.content-wrapper{
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-item{
+    padding: 20px;
+    list-style: none;
+}
+.nav-link{
+    color: black;
+    font-family: 'Zen Kurenaido', sans-serif;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: gray;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: gray;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: black;
+}
+.foot-bar{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-list{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-item{
+    padding: 20px;
+    list-style: none;
+}
+.foot-link{
+    color: gray;
+    font-family: 'Zen Kurenaido', sans-serif;
+    text-decoration: none;
+}
+.foot-link:hover{
+    color: white;
+}
+#particles-js{
+    position: relative;
+    z-index: -1;
+}
+
+/*mobile-setting*/
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+.content-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}.nav-bar{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.foot-bar{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+}
