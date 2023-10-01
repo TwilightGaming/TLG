@@ -140,11 +140,9 @@
 
 @media screen and (max-width: 480px) {
 .index-top{
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-}
-index-title{
-    text-align: center;
 }
 .second-area{
     flex-wrap: wrap;
