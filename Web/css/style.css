@@ -143,6 +143,9 @@
     flex-wrap: wrap;
     flex-direction: column;
 }
+index-title{
+    text-align: center;
+}
 .second-area{
     flex-wrap: wrap;
     flex-direction: column;
@@ -188,5 +191,14 @@
 }
 .buttons{
     padding: 20px;
+}
+.a-button h1,span{
+    font-size: 75%
+
+.w-button h1,span{
+    font-size: 75%
+}
+.c-button h1,span{
+    font-size: 75%
 }
 }
